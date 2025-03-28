@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdn.jsdelivr.net https://fonts.googleapis.com https://fonts.gstatic.com https://i.imgur.com; frame-src 'self' https://www.youtube.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - Epic Survival Game Against Monsters</title>
+    <meta name="description" content="Play Monster Survivors online - an epic survival game where you fight against hordes of monsters and collect power-ups to survive the onslaught.">
+    <link rel="canonical" href="https://monstersurvivors.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #1ABC9C;
+            --accent-color: #E74C3C;
+            --bg-color: #0F172A;
+            --text-color: #ECF0F1;
+            --dark-accent: #16A085;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .tech-gradient {
+            background: linear-gradient(135deg, var(--bg-color) 0%, #1E293B 100%);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 10px rgba(26, 188, 156, 0.7);
+        }
+        
+        .glow-border {
+            box-shadow: 0 0 15px rgba(26, 188, 156, 0.5);
+        }
+        
+        .btn {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(22, 160, 133, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .game-frame { height: 400px; }
+            h1 { font-size: 2rem !important; }
+            h2 { font-size: 1.5rem !important; }
+        }
+        
+        @media (max-width: 480px) {
+            .game-frame { height: 300px; }
+        }
+        
+        .feature-card {
+            background: rgba(44, 62, 80, 0.7);
+            border-left: 4px solid var(--secondary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-left-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="tech-gradient py-6 mb-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-4xl font-bold glow-text mb-2">Monster Survivors</h1>
+                <p class="text-xl text-gray-300">Survive the endless monster hordes in this epic action game!</p>
+            </div>
+            <a href="#play-now" class="btn mt-4 md:mt-0">PLAY NOW</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto pb-16">
+        <!-- 游戏框架部分保持不变 -->
+        <section id="play-now" class="mb-16">
+            <div class="tech-gradient p-4 rounded-lg glow-border mb-6">
+                <iframe 
+                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-0g.html" 
+                    class="game-frame" 
+                    title="Play Monster Survivors Online"
+                    loading="lazy"
+                ></iframe>
+            </div>
+            <div class="text-center mb-8">
+                <p class="text-xl">Use WASD or arrow keys to move. Automatically attack nearby monsters and collect power-ups to become stronger!</p>
+            </div>
+        </section>
+
+        <!-- 其他内容部分保持不变 -->
+        <!-- ... -->
+    </main>
+
+    <footer class="tech-gradient py-8 mt-16">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">© 2025 Monster Survivors. All rights reserved.</p>
+            <p class="text-sm text-gray-400">Monster Survivors is an online action survival game. Play for free directly in your browser.</p>
+        </div>
+    </footer>
+</body>
+</html>
